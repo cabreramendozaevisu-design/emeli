@@ -270,8 +270,7 @@ let audioReady = false;
 
 // Load local MP3 file
 function loadAudio(){
- audio.src = 'briillas.mp3';
-
+  audio.src = 'cancion.mp3';
   audioReady = true;
   audio.load();
   audio.play().then(()=>{ setIcons(true); startTick(); }).catch(()=>setIcons(false));
